@@ -1,0 +1,697 @@
+/*
+Theme Name: Aros Post Theme
+Theme URI: https://aros100.com
+Description: 아로스 홈페이지 글쓰기 스킨 - 워드프레스 버전
+Version: 1.0
+Author: 아로스
+Author URI: https://aros100.com
+License: Copyright 2020 (주)아백
+*/
+
+.ad-container {
+width: 100%;
+max-width: 768px;
+margin: 15px auto;
+box-sizing: border-box;
+}
+.adsbygoogle {
+display: block !important;
+width: 100% !important;
+height: auto !important;
+margin: 0 auto !important;
+}
+html, body {
+margin: 0;
+padding-top: 50px;
+width: 100%;
+overflow-x: hidden;
+box-sizing: border-box;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+background: white !important;
+min-width: auto !important;
+max-width: 768px !important;
+margin: 0 auto !important;
+}
+.main-inner .columns {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+.container {
+max-width: 768px;
+padding: 0 10px;
+margin: 0 auto;
+box-sizing: border-box;
+}
+/* 헤더 */
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: white;
+z-index: 1000;
+}
+.header .container {
+display: flex;
+align-items: center;
+padding: 0;
+justify-content: center;
+max-width: 768px;
+margin: 0 auto;
+height: 42px;
+}
+/* 블로그스팟 특정 스타일 오버라이드 */
+#header-inner {
+margin: 0 !important;
+padding: 0 !important;
+}
+.header-outer {
+margin: 0 !important;
+padding: 0 !important;
+}
+.logo img {
+height: 30px;
+width: auto;
+object-fit: contain;
+vertical-align: middle;
+}
+.logo-text {
+margin-left: 10px;
+font-size: 24px;
+}
+/* 탭 메뉴 */
+.tab-wrapper {
+position: fixed !important;
+top: 42px !important;
+left: 0 !important;
+width: 100% !important;
+background: white !important;
+z-index: 999 !important;
+padding: 0 !important;
+}
+.tab-container {
+background: white !important;
+border-radius: 50px !important;
+padding: 5px !important;
+margin: 0 auto !important;
+max-width: 768px !important;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+.tabs {
+display: flex !important;
+justify-content: space-between !important;
+list-style: none !important;
+padding: 0 !important;
+margin: 0 !important;
+}
+.tab-item {
+flex: 1 !important;
+text-align: center !important;
+margin: 0 !important;
+}
+.tab-link {
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+padding: 12px 6px !important;
+text-decoration: none !important;
+color: #666 !important;
+border-radius: 25px !important;
+transition: all 0.3s ease !important;
+font-size: 14px !important;
+white-space: nowrap !important;
+overflow: hidden !important;
+}
+.tab-link:hover {
+text-decoration: none !important;
+color: #666 !important;
+}
+.tab-link.active {
+background-color: #6528f7 !important;
+color: white !important;
+text-decoration: none !important;
+}
+.tab-item::before,
+.tab-item::after {
+content: none !important;
+display: none !important;
+}
+@media screen and (max-width: 480px) {
+.tab-container {
+width: 92% !important;
+}
+}
+/* 컨텐츠 영역 */
+#main {
+padding: 0 !important;
+background: white !important;
+}
+.main-inner {
+max-width: 768px !important;
+margin: 0 auto !important;
+background: white !important;
+padding: 0 !important;
+}
+.post-body {
+max-width: 768px !important;
+margin: 0 auto !important;
+padding: 0 !important;
+overflow-x: hidden;
+}
+/* 숨김 처리 */
+.blog-pager,
+.post-header,
+.post-footer,
+.sidebar-container,
+.column-right-outer,
+.column-left-outer,
+#navbar-iframe,
+.post-title,
+.date-header {
+display: none !important;
+}
+/* 애드센스 수정 */
+.ad-container, .adsbygoogle {
+z-index: 5;
+pointer-events: none;
+}
+.adsbygoogle * {
+pointer-events: auto;
+}
+.adsbygoogle iframe,
+.adsbygoogle div,
+.adsbygoogle button,
+.adsbygoogle .close-button,
+.adsbygoogle [class*="close"] {
+pointer-events: auto !important;
+z-index: 999999 !important;
+}
+/* 카드 스타일 */
+.aros-blue-card {
+background: #EEF6FF;
+border-radius: 16px;
+padding: 20px;
+margin: 15px 0;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.aros-blue-card ul {
+list-style: none;
+padding-left: 0;
+}
+.aros-blue-card li {
+position: relative;
+padding-left: 15px;
+margin-bottom: 10px;
+}
+.aros-blue-card li:before {
+content: "•";
+position: absolute;
+left: 0;
+color: #2196F3;
+}
+.aros-blue-card h2 {
+font-size: 20px;
+font-weight: bold;
+color: #2196F3;
+margin: 2px 0px 15px;
+}
+.aros-blue-card p {
+margin-bottom: 15px;
+line-height: 1.6;
+}
+/* 카드 스타일 */
+.aros-red-card {
+background: red;
+border-radius: 16px;
+padding: 20px;
+margin: 15px 0;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.aros-red-card ul {
+list-style: none;
+padding-left: 0;
+}
+.aros-red-card li {
+position: relative;
+padding-left: 15px;
+margin-bottom: 10px;
+}
+.aros-red-card li:before {
+content: "•";
+position: absolute;
+left: 0;
+color: #6528f7;
+}
+.aros-red-card h2 {
+font-size: 20px;
+font-weight: bold;
+color: #6528f7;
+margin: 2px 0px 15px;
+}
+.aros-red-card p {
+margin-bottom: 15px;
+line-height: 1.6;
+}
+.aros-gray-card-center {
+background: rgb(248 249 250);
+border-radius: 16px;
+padding: 25px;
+text-align: center;
+margin: 20px 0;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.aros-gray-card-center h2 {
+font-size: 28px;
+font-weight: bold;
+color: #6528f7;
+margin: 0px 0px 10px;
+}
+.aros-gray-card-center h3 {
+font-size: 24px;
+font-weight: bold;
+color: #363636;
+margin: 0px 0px 5px;
+}
+.aros-gray-card {
+background: rgb(248 249 250);
+border-radius: 16px;
+padding: 25px;
+margin: 20px 0;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.aros-gray-card h2 {
+font-size: 28px;
+font-weight: bold;
+color: #6528f7;
+margin: 0px 0px 10px;
+}
+.aros-gray-card h3 {
+font-size: 23px;
+font-weight: bold;
+color: #363636;
+margin: 0px 0px 5px;
+}
+.aros-gray-card p {
+margin-bottom: 15px;
+line-height: 1;
+color: #666666;
+}
+.aros-gray-card ul {
+list-style: none;
+padding-left: 0;
+}
+.aros-gray-card li {
+position: relative;
+padding-left: 15px;
+margin-bottom: 10px;
+}
+.aros-gray-card li:before {
+content: "•";
+position: absolute;
+left: 0;
+color: #6528f7;
+}
+.aros-gray-card p {
+margin-bottom: 15px;
+line-height: 1.6;
+}
+.aros-gray-card .apply-date-text {
+color: #6528f7;
+font-size: 22px;
+font-weight: bold;
+}
+.aros-gray-card .apply-text {
+color: #666666;
+}
+.aros-gray-card .subtitle {
+margin-bottom: 15px;
+}
+.aros-gray-card .description {
+color: #444444;
+margin: 10px 0px;
+}
+.aros-gray-card .highlight-box {
+background: rgb(243, 244, 246);
+border-radius: 8px;
+margin-top: 15px;
+padding: 15px;
+}
+.aros-gray-card .highlight-text {
+color: #6528f7;
+font-size: 20px;
+font-weight: bold;
+}
+.aros-gray-card .requirements {
+padding: 20px;
+}
+.aros-gray-card .requirement-item {
+margin-bottom: 15px;
+}
+.aros-gray-card .requirement-title {
+font-weight: 600;
+color: #6528F7;
+margin-bottom: 8px;
+}
+.aros-gray-card .requirement-desc {
+color: #666;
+font-size: 15px;
+}
+.aros-gray-card .documents {
+margin-top: 15px;
+padding: 15px;
+}
+.aros-gray-card .documents-title {
+font-size: 16px;
+font-weight: bold;
+color: #6528F7;
+margin-bottom: 10px;
+}
+.aros-gray-card .documents-list {
+color: #666;
+font-size: 15px;
+}
+/* 흰색 카드 스타일 */
+.aros-white-card {
+background: white;
+border-radius: 16px;
+padding: 20px;
+margin: 15px 0;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.aros-white-card h2 {
+font-size: 20px;
+font-weight: bold;
+color: #6528f7;
+margin: 2px 0px 15px;
+}
+.aros-white-card ul {
+list-style: none;
+padding-left: 0;
+}
+.aros-white-card li {
+position: relative;
+padding-left: 15px;
+margin-bottom: 10px;
+}
+.aros-white-card li:before {
+content: "•";
+position: absolute;
+left: 0;
+color: #6528f7;
+}
+.aros-white-card p {
+margin-bottom: 15px;
+line-height: 1.6;
+}
+/* 제목 스타일 */
+h2 {
+font-size: 20px;
+font-weight: bold;
+color: #1646B3;
+margin: 30px 0 15px 0;
+}
+h3 {
+font-size: 20px;
+font-weight: bold;
+color: #333;
+margin: 20px 0 15px 0;
+}
+/* 공통 버튼 스타일 */
+.apply-container {
+max-width: 100%;
+overflow-x: hidden;
+padding: 5px;
+width: 100%;
+}
+.link-container {
+margin: 0px 5px;
+}
+.custom-link {
+display: block;
+margin: 10px 0px;
+text-decoration: none;
+}
+/* 다른글 스타일(하단부) */
+.benefit-card {
+background: rgb(248, 249, 251);
+border-radius: 16px;
+margin: 20px 0px;
+padding: 25px;
+}
+.benefit-card a {
+text-decoration: none;
+}
+.benefit-title {
+align-items: center;
+display: flex;
+margin-bottom: 20px;
+}
+.benefit-title .icon {
+color: #ff4d4d;
+margin-right: 8px;
+}
+.benefit-list {
+background: rgb(243, 244, 246);
+border-radius: 12px;
+padding: 20px;
+}
+.benefit-list a {
+text-decoration: none;
+}
+.benefit-item {
+align-items: center;
+background: white;
+border-radius: 12px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+margin-bottom: 12px;
+padding: 16px;
+transition: 0.3s;
+}
+.benefit-item:hover {
+transform: scale(1.02);
+background-color: #f8f9fa;
+}
+.benefit-text {
+color: #333333;
+font-weight: 600;
+letter-spacing: -0.5px;
+}
+.bottom-button {
+align-items: center;
+background: rgb(101, 40, 247);
+border-radius: 12px;
+border: none;
+color: white;
+cursor: pointer;
+display: flex;
+font-size: 17px;
+font-weight: 600;
+justify-content: space-between;
+letter-spacing: -0.5px;
+margin-top: 20px;
+padding: 18px;
+transition: 0.3s;
+width: 100%;
+}
+.bottom-button:hover {
+transform: scale(1.02);
+box-shadow: 0 4px 15px rgba(101, 40, 247, 0.3);
+}
+.button-container {
+background: rgb(101, 40, 247);
+border-radius: 12px;
+color: white;
+cursor: pointer;
+padding: 18px;
+transition: 0.3s;
+}
+.button-container:hover {
+transform: scale(1.01);
+box-shadow: 0 4px 15px rgba(101, 40, 247, 0.3);
+}
+.button-content {
+align-items: center;
+display: flex;
+justify-content: space-between;
+}
+.button-text {
+font-size: 18px;
+font-weight: 600;
+letter-spacing: -0.5px;
+}
+.aros-blue-button{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem 2rem;
+font-size: 24px;
+font-weight: bold;
+border-radius: 1rem;
+width: 100%;
+height: 60px;
+max-width: 768px;
+margin: 15px auto;
+text-align: center;
+border: 1px solid #cacbcb;
+cursor: pointer;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2),
+0 4px 7px rgba(0, 0, 0, 0.1);
+}
+.aros-gray-button {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem 2rem;
+font-size: 24px;
+font-weight: bold;
+border-radius: 1rem;
+width: 100%;
+height: 100px;
+max-width: 768px;
+margin: 15px auto;
+text-align: center;
+border: 1px solid #cacbcb;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.aros-blue-button a,
+.aros-gray-button a {
+display: flex;
+flex-direction: column;
+gap: 0.4rem;
+text-decoration: none;
+font-weight: 600;
+width: 100%;
+}
+.aros-blue-button {
+background-color: #6528f7;
+border-color: #6528f7;
+}
+.aros-blue-button a {
+color: white;
+}
+.aros-gray-button {
+background-color: rgb(248 249 250);
+}
+.aros-gray-button a {
+color: #4f5050;
+}
+.aros-gray-button span {
+font-size: 16px;
+opacity: 0.8;
+}
+.aros-blue-button,
+.aros-gray-button {
+border: 1px solid #cacbcb;
+outline: none;
+}
+@media screen and (max-width: 768px) {
+h2 {
+font-size: 20px;
+}
+h3 {
+font-size: 20px;
+}
+}
+@media screen and (max-width: 768px) {
+body {
+font-size: 18px;
+}
+.container {
+padding: 10px;
+width: 100% !important;
+}
+.tab-link {
+padding: 10px 8px;
+font-size: 14px;
+}
+.content {
+padding: 0 !important;
+background: white !important;
+}
+}
+/* 푸터 스타일 */
+.footer {
+flex-shrink: 0;
+background: #E3F2FD;
+color: #333;
+padding: 20px 0;
+margin-top: 30px;
+width: 100%;
+}
+.footer-content {
+max-width: 768px;
+margin: 0 auto;
+padding: 0 15px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+.footer-left {
+flex: 1;
+}
+@media (max-width: 768px) {
+.footer-content {
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.footer-left,
+.footer-right {
+text-align: center;
+margin-bottom: 20px;
+}
+.footer-info li {
+margin-bottom: 8px;
+}
+.footer-right p,
+.footer-right a {
+text-align: center;
+margin-bottom: 8px;
+}
+}
+.footer-right {
+text-align: right;
+}
+.footer-right a {
+color: #1976D2;
+text-decoration: none;
+}
+.footer-right a:hover {
+text-decoration: underline;
+}
+.footer-copyright {
+color: #666;
+font-size: 0.9rem;
+margin-top: 10px;
+}
+.footer-brand {
+font-size: 1.1rem;
+font-weight: bold;
+margin-bottom: 5px;
+color: #1976D2;
+}
+.footer-info {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.footer-info li {
+margin-bottom: 2px;
+color: #666;
+font-size: 0.9rem;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
